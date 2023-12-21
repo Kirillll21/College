@@ -9,6 +9,142 @@
       Title="AddTeacher">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Left" Grid.Row="0" Width="50">
+            <Image Source="\Images\free-icon-university-3495908.png"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right">
+            <Button Name="btnBack"                        
+        Width="125"
+        Height="30"
+        Margin="0,10,10,0"
+        Content="Назад"
+        Click="btnBack_Click"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center"
+        Orientation="Horizontal"
+        VerticalAlignment="Top">
+            <TextBlock Text="Добавление преподавателя"
+           VerticalAlignment="Center"
+           FontSize="26"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Vertical"
+        Grid.Row="1"
+        Margin="20,0,0,0">
+            <StackPanel Orientation="Vertical"
+            VerticalAlignment="Top"
+            Width="200"
+            HorizontalAlignment="Left"
+            >
+                <TextBlock Text="Введите ФИО"
+               Height="20"
+               />
+                <TextBox Height="30"
+             Width="200"
+             Name="txbFio"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    Width="200"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Left"
+                    >
+
+                <TextBlock Text="Введите возраст"
+                           Height="20"                   
+                  
+                           />
+
+                <TextBox Height="30"             
+                         Width="200"             
+                         Name="txbAge"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    Width="200"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Left"
+                    >
+                <TextBlock Text="Специальность"
+                       Height="20"
+   />
+                <TextBox Height="30"
+                     Width="200"
+                     Name="txbSpecialty"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    Width="200"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Left"
+                    >
+                <TextBlock Text="Кол-во детей"
+                       Height="20"                               
+                       />
+                <TextBox Height="30"
+                         Width="200"
+                         Name="txbChildren"/>             
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Top"
+                    Width="200"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1"
+                Orientation="Vertical"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                >
+            <StackPanel Orientation="Vertical">
+
+                <TextBlock Text="Выберите категорию"
+                       Height="20"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Vertical"
+                    Margin="0,10,0,0">
+                <ComboBox SelectionChanged="ScTopics_SelectionChanged"
+                      Name="CmbCategory"
+                      Height="30"
+                      Width="200">
+
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical"
+                    Margin="0,10,0,0"/>
+
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="2" 
+                Height="30"
+                HorizontalAlignment="Center"
+                Margin="0,0,20,0">
+
+            <Button Width="130"
+                Height="30"
+                Name="btnSubmit"
+                Click="btnSubmit_Click"
+                Content="Создать"
+                        />
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using College.AppServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,32 +28,33 @@ namespace College.AdminPages
 
         private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new AddUser());
+        
         }
 
         private void btnAddTeacher_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new AddTeacher());
         }
 
         private void btnGoTeacher_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new ListTeachers());
         }
 
         private void btnUsers_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new ListUsers());
         }
 
         private void btnGoTeacher_Click_1(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new ListTeachers());
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
     }
 }
