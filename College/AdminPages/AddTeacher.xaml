@@ -119,7 +119,7 @@
 
             <StackPanel Orientation="Vertical"
                     Margin="0,10,0,0">
-                <ComboBox SelectionChanged="ScTopics_SelectionChanged"
+                <ComboBox SelectionChanged="CmbCategory_SelectionChanged"
                       Name="CmbCategory"
                       Height="30"
                       Width="200">

@@ -45,5 +45,10 @@ namespace College.EducPartPages
         {
             FrameApp.frmObj.Navigate(new ListTeachers());
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

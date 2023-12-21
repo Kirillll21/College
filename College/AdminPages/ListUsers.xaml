@@ -28,7 +28,7 @@
             <Button
                  Content="Назад"
                  x:Name="BtnGoBack"
-                 Click="btnGoBack_Click" Width="135" Height="35"
+                 Click="BtnGoBack_Click" Width="135" Height="35"
                  />
         </StackPanel>
 

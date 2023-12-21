@@ -57,5 +57,20 @@ namespace College.AdminPages
                 }
             }
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddStd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

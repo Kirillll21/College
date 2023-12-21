@@ -86,5 +86,15 @@ namespace College.AdminPages
                 throw;
             }
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CmbCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
