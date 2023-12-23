@@ -64,7 +64,7 @@
                     <StackPanel Orientation="Horizontal">
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding FIO}"/>
+                                <Label Content="{Binding Name}"/>
                                 <Label Content=" | "/>
                                 <Label Content="{Binding Group.Name}"/>
                                 <Label Content=" | "/>
