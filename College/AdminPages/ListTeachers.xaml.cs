@@ -50,7 +50,7 @@ namespace College.AdminPages
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
 
         private void ListTeacher_SelectionChanged(object sender, SelectionChangedEventArgs e)

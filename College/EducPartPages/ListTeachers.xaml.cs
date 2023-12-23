@@ -92,10 +92,7 @@ namespace College.EducPartPages
 
         private void CmbFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var select = CmbFilter.SelectedItem as AcRank;
-            var allItems = DbConnect.entObj.Teachers.ToList();
-            var items = (select != null) ? allItems.Where(x => x.AcademicId == select.Id) : allItems;
-            ListTeacher.ItemsSource = items;
+           
         }
 
         private void ListTeacher_SelectionChanged(object sender, SelectionChangedEventArgs e)

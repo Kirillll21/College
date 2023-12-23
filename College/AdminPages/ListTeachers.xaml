@@ -62,15 +62,15 @@
                     <StackPanel Orientation="Horizontal">
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding }"/>
+                                <Label Content="{Binding Name}"/>
                                 <Label Content="|"/>
-                                <Label Content="{Binding }"/>
+                                <Label Content="{Binding Age}"/>
                                 
                             </StackPanel>
 
-                            <Label Content="{Binding }" ContentStringFormat=": {0}"/>
-                            <Label Content="{Binding }" ContentStringFormat=": {0}"/>
-                            <Label Content="{Binding }" ContentStringFormat=": {0}"/>
+                            <Label Content="{Binding Specialty}" ContentStringFormat="Специальность: {0}"/>
+                            <Label Content="{Binding Children}" ContentStringFormat="Дети: {0}"/>
+                            <Label Content="{Binding AcRank.Name}" ContentStringFormat=": {0}"/>
 
                         </StackPanel>
                     </StackPanel>

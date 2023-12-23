@@ -65,7 +65,7 @@ namespace College.AdminPages
 
         private void BtnGoBack_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
 
         private void btnAddStd_Click(object sender, RoutedEventArgs e)

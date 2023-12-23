@@ -1,4 +1,5 @@
-﻿using College.Data;
+﻿using College.AppServices;
+using College.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -89,7 +90,7 @@ namespace College.AdminPages
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.GoBack();
         }
 
         private void CmbCategory_SelectionChanged(object sender, SelectionChangedEventArgs e)
